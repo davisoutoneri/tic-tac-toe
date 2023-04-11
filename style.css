@@ -207,4 +207,12 @@ body{
     justify-content: center;
     gap: 2rem;
   }
+
+  .selectedX{
+    background-color: var(--player1-color);
+  }
+  .selectedO{
+    background-color: var(--player2-color);
+  }
+  
 }
