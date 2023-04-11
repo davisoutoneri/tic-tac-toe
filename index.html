@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header class="playersData" id="playersData">
+      <h1>Jogo da Velha</h1>
+      <div class="players">
+        <div class="player1">
+          <label for="player1Name">Jogador X:</label>
+          <input type="text" name="player1Name" id="player1Name">
+        </div>
+        
+        <div class="player2">
+          <label for="player2Name">Jogador O:</label>
+          <input type="text" name="player2Name" id="player2Name">
+        </div>
+      </div>
+      <button class="startBtn" id="startBtn">Começar!</button>
+      <h2>Vez de <span id="turnPlayer"></span></h2>
+    </header>
+    <section class="game" id="game">
+      <div class="buttonsGame" id="buttonsGame">
+        <button class="buttonXO" data-value=""></button>
+        <button class="buttonXO" data-value=""></button>
+        <button class="buttonXO" data-value=""></button>
+
+        <button class="buttonXO" data-value=""></button>
+        <button class="buttonXO" data-value=""></button>
+        <button class="buttonXO" data-value=""></button>
+
+        <button class="buttonXO" data-value=""></button>
+        <button class="buttonXO" data-value=""></button>
+        <button class="buttonXO" data-value=""></button>
+      </div>
+    </section>
+    <section class="resultSection" id="resultSection">
+      <label for="restartBtn" class="winner" id="winner"></label>
+      <button class="restartBtn" id="restartBtn">Reiniciar jogo!</button>
+    </section>
+  </body>
+</html>
